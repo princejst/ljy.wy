@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh - CN">
+
+<head>
+  <meta charset="UTF - 8">
+  <meta name="viewport" content="width=device - width, initial - scale=1.0">
+  <title>双按钮跳转网页示例</title>
+</head>
+
+<body>
+  <!-- 第一个按钮 -->
+  <button id="button1">跳转新闻咨询</button>
+  <!-- 第二个按钮 -->
+  <button id="button2">跳转知识点视图</button>
+
+  <script>
+    // 获取第一个按钮元素
+    const button1 = document.getElementById('button1');
+    // 获取第二个按钮元素
+    const button2 = document.getElementById('button2');
+
+    // 为第一个按钮添加点击事件监听器
+    button1.addEventListener('click', function () {
+      // 替换成第一个要跳转的网址
+      window.location.href = 'https://example1.com'; 
+    });
+
+    // 为第二个按钮添加点击事件监听器
+    button2.addEventListener('click', function () {
+      // 替换成第二个要跳转的网址
+      window.location.href = 'https://example2.com'; 
+    });
+  </script>
+</body>
+
+</html>

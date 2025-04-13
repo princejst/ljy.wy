@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新闻资讯</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .news-container {
+            width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin-bottom: 20px;
+        }
+        
+        .content-wrapper {
+            display: flex;
+        }
+        
+        .left-column {
+            width: 70%;
+            padding-right: 20px;
+        }
+        
+        .right-column {
+            width: 30%;
+            border-left: 1px solid #ddd;
+            padding-left: 20px;
+        }
+        
+        .news-item {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ccc;
+        }
+        
+        .news-item h2 {
+            color: #0066cc;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .news-images {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        
+        .news-images img {
+            width: 48%;
+            height: 120px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+        
+        .author-info {
+            text-align: right;
+            color: #666;
+            font-size: 12px;
+        }
+        
+        .hot-news-title {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .hot-news-item {
+            margin-bottom: 15px;
+        }
+        
+        .hot-news-item a {
+            display: block;
+            color: #cc3300;
+            text-decoration: none;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .hot-news-item img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+    <div class="news-container">
+        <h1>新闻资讯</h1>
+        <hr>
+        
+        <div class="content-wrapper">
+            <div class="left-column">
+                <div class="news-item">
+                    <h2>飞行了200多亿公里的旅行者一号，为何不会撞上太空中的小行星</h2>
+                    <div class="news-images">
+                        <img src="OIP-C (1).jpg" alt="科技图片1">
+                        <img src="OIP-C (2).jpg" alt="科技图片2">
+                    </div>
+                    <p class="author-info">作者：张科技 | 发布时间：2023-06-15</p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>欧洲探测器从4亿多公里外传回多张照片</h2>
+                    <div class="news-images">
+                        <img src="OIP-C (4).jpg" alt="绿化图片1">
+                        <img src="file:///E:/前端/Lab1-330-李建宇/OIP-C (3).jpg" alt="绿化图片2">
+                    </div>
+                    <p class="author-info">作者：李环保 | 发布时间：2023-06-14</p>
+                </div>
+                
+                <div class="news-item">
+                    <h2>为什么太空没有氧气，陨石仍然能够燃烧</h2>
+                    <div class="news-images">
+                        <img src="OIP-C (5).jpg" alt="文化图片1">
+                        <img src="下载.jpg" alt="文化图片2">
+                    </div>
+                    <p class="author-info">作者：王文化 | 发布时间：2023-06-13</p>
+                </div>
+            </div>
+            
+            <div class="right-column">
+                <h3 class="hot-news-title">热文推荐</h3>
+                <div class="hot-news-item">
+                    <a href="#">研究表明:人类的自然寿命为120岁</a>
+                    <img src="OIP-C (6).jpg" alt="旅游热点">
+					</div>
+					                
+					                <div class="hot-news-item">
+					                    <a href="#">白墙脏了不用重新刷，一个窍门，简单一擦，立马干净如新</a>
+					                    <img src="OIP-C (7).jpg" alt="汽车热点">
+					                </div>
+					                
+					                <div class="hot-news-item">
+					                    <a href="#">俗语"八月十二用一宝，四季无烦恼",一宝竟是盐水</a>
+					                    <img src="OIP-C (8).jpg" alt="体育热点">
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					</body>
+					</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识点视图</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            position: relative;
+            width: 900px;
+            height: 600px;
+            margin: 30px auto;
+            background-image: url('background.jpg');
+            background-size: cover;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .knowledge-point {
+            position: absolute;
+            width: 250px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .point1 {
+            top: 30px;
+            left: 40px;
+            z-index: 3;
+        }
+        
+        .point2 {
+            top: 50px;
+            right: 20px;
+            z-index: 3;
+        }
+        
+        .point3 {
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            width: 300px;
+        }
+		.oval-image {
+		            position: absolute;
+		            top: 150px;
+		            left: 300px;
+		            width: 300px;
+		            height: 200px;
+		            border-radius: 50%;
+		            object-fit: cover;
+		            z-index: 4; 
+		        }
+        
+        h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        ul {
+            padding-left: 20px;
+            margin: 0;
+        }
+        
+        li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .title {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Web开发知识点展示</h1>
+    <div class="container">
+        <div class="knowledge-point point1">
+            <h3>HTML基础和HTML5</h3>
+            <ul>
+                <li>HTML标签与属性</li>
+                <li>HTML5多媒体(视频和音频)</li>
+                <li>HTML5图像标签(画布和SVG)</li>
+                <li>HTML5地理定位</li>
+                <li>HTML5表单</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point2">
+            <h3>CSS基础和CSS3</h3>
+            <ul>
+                <li>CSS选择器</li>
+                <li>CSS样式</li>
+                <li>CSS盒模型与定位</li>
+                <li>CSS3的2D与3D转换</li>
+                <li>CSS3的过渡与动画</li>
+                <li>CSS3新的边框效果</li>
+            </ul>
+        </div>
+        
+        <div class="knowledge-point point3">
+            <h3>JavaScript基础</h3>
+            <ul>
+                <li>数据类型</li>
+                <li>运算符</li>
+                <li>基础语法</li>
+                <li>BOM对象</li>
+                <li>DOM对象</li>
+                <li>JS对象</li>
+            </ul>
+        </div>
+		<img class="oval-image" src="OIP-C.jpg" alt="椭圆形图片">
+    </div>
+</body>
